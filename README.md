@@ -41,8 +41,12 @@ adonis migration:run
 
 ## CONS
 
+ - escrever schema na mão
+ 
+ - orm não corrigi snake_case para lowerCammelCase
+
  - migrations não são automaticamente geradas
 
  - tem uma dependencia com fragilidade e breaking changes ativa, mesmo a galera dizendo que essa dependencia é muito no fundo do framework e 100% inacessível as coisas sempre pode escalar (thread sobre o assunto)[https://twitter.com/dan_abramov/status/1149795048722067456?s=21]
 
-  - não sei se é uma questão do exemplo que usei, mas todas as mutations no mesmo arquivo é uma péssima ideia muito rápido
+  - não sei se é uma questão do exemplo que usei, mas todas as mutations no mesmo arquivo é uma péssima ideia muito rápido, mesmo que a galera use ` o que torna mais fácil interpolar

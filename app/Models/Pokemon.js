@@ -4,13 +4,13 @@
 const Model = use('Model')
 
 class Pokemon extends Model {
-    type(){
+    type_id(){
         return this.hasMany('App/Model/Type')
     }
-    next_evolution() {
+    next_evolution_id() {
         return this.hasOne('App/Model/Pokemon')
     }
-    previous_evolution() {
+    previous_evolution_id() {
         return this.hasOne('App/Model/Pokemon')
     }
 }
